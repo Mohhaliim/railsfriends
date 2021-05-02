@@ -1,1 +1,17 @@
-<H1>this is about page</H1>
+<div class="card text-center">
+  <div class="card-header">
+    About This App
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Friends list App</h5>
+    <p class="card-text">This app is a clone of a youtube ruby on rails tutorial,
+    i used devise to manage users and Authorization,
+     bootstrap for front end styling and basic CRUD commands for scaffolding, moving into bigger stuff in future hopefully.</p>
+    <a ><%= link_to 'Home' , root_path , class: " btn btn-primary" %></a>
+  </div>
+  <div class="card-footer text-muted">
+    <% d =DateTime.now %>
+    <%= d.strftime "%d/%m/%y %I:%M" %>
+    
+  </div>
+</div>
